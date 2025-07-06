@@ -1,1 +1,21 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.18s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,7 +1,5 @@
- 
 import "./globals.css";
 import { Web3Provider } from "./context/Web3Context";
- 
 
 export const metadata = {
   title: "Vote App",
@@ -11,10 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gradient-to-br from-gray-800 to-slate-900 text-white overflow-hidden  ">
         <Web3Provider>
-          
-        {children}
+          <div className="p-2s">{children}</div>
         </Web3Provider>
       </body>
     </html>
