@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-br from-gray-800 to-slate-900 text-white overflow-hidden  ">
+      <body className="bg-gradient-to-br from-gray-800 to-slate-900 text-white overflow-   ">
         <Web3Provider>
           <div className="p-2s">{children}</div>
         </Web3Provider>
